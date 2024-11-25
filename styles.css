@@ -1,0 +1,182 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Orange: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Overpass", sans-serif;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.container{
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+}
+
+.card{
+    background-color: #1A202A;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.card.first .card-header{
+
+}
+
+.card.first .card-header .group{
+    background-color: #272E39;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.first .card-header .group .img-icon-star{
+    width: 15px;
+    height: 15px;
+}
+
+.card.first .card-body{
+
+}
+
+.card.first .card-body h1{
+    color: var(--White);
+}
+
+.card.first .card-body p{
+    color: var(--Light-Grey);
+    font-size: 0.9rem;
+}
+
+.card.first .card-body .group{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+
+.card.first .card-body .group .group-child{
+    width: 45px;
+    height: 45px;
+    background-color: #272E39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.select-number{
+    background-color: var(--Orange) !important;
+}
+
+.select-number-span{
+    color: var(--Very-Dark-Blue) !important;
+}
+
+.card.first .card-body .group .group-child:hover{
+    background-color: var(--White);
+    transition: 0.2s;
+}
+
+.card.first .card-body .group .group-child:hover span{
+    color: var(--Very-Dark-Blue);
+}
+
+.card.first .card-body .group .group-child span{
+    color: var(--Light-Grey);
+}
+
+.card.first .card-body  button{
+    background-color: var(--Orange);
+    width: 100%;
+    padding: 15px 0px ;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #272E39;
+    font-family: "Overpass", sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.card.first .card-body  button:hover{
+    background-color: var(--White);
+    transition: 0.2s;
+}
+
+/* CARD SECOND  */
+
+.card.second{
+    margin-top: 30px;
+    padding: 20px;
+    display: none;
+}
+
+.card.second .card-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.second .card-header img{
+    margin-top: 20px;
+    width: 130px;
+}
+
+.card.second .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card.second .card-body .group{
+    margin-top: 20px;
+    background-color: var(--Dark-Blue);
+    padding: 8px 15px;
+    width: 145px;
+    border-radius: 18px;
+}
+
+.card.second .card-body .group span{
+    color: var(--Orange);
+    font-size: 0.85rem;
+}
+
+.card.second .card-body h2{
+    color: var(--White);
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.card.second .card-body p{
+    margin-top: 0;
+    color: var(--Light-Grey);
+    text-align: center;
+    font-size: 0.85rem;
+}
